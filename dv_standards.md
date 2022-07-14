@@ -1,8 +1,10 @@
+# Data Vault Standards
+
 ## Hubs
 
 A unique list of business keys
 
-### Columns
+### Hub Columns
 
 * Hash Key - Optional Surrogate Key
 * Business Key - Required
@@ -13,7 +15,7 @@ A unique list of business keys
 
 Two (2) or more Hub primary keys.  A relationship, transaction or a hierarchy.
 
-### Columns
+### Link Columns
 
 * Hash Key - Optional
 * Business Keys from contributing hubs (2 or more)
@@ -21,9 +23,10 @@ Two (2) or more Hub primary keys.  A relationship, transaction or a hierarchy.
 * Source System Code - Required
 
 ## Satellites
+
 Historical record of the descriptive data for a (single) hub or link.
 
-### Columns
+### Satellite Columns
 
 * Surrogate Key - Optional
 * Primary key of the related Hub or Link
@@ -31,6 +34,7 @@ Historical record of the descriptive data for a (single) hub or link.
 * 1 or more descriptive attributes
 
 ## Entity Naming Conventions
+
 ## Raw DV
 
 | Entity Type | Prefix |
@@ -40,12 +44,12 @@ Historical record of the descriptive data for a (single) hub or link.
 | Satellite   | SAT    |
 
 ## Business DV
+
 | Entity Type        | Prefix |
 | ------------------ | ------ |
 | Business Hub       | BHUB   |
 | Business Link      | BLNK   |
 | Business Satellite | BSAT   |
-
 
 ### Special Links
 
@@ -54,8 +58,8 @@ Historical record of the descriptive data for a (single) hub or link.
 | Same-As Link  | SAL    |
 | Point-in-Time | PIT    |
 | Bridge        | BRG    |
- 
-### Star 
+
+### Star
 
 | Entity Type | Prefix |
 | ----------- | ------ |
